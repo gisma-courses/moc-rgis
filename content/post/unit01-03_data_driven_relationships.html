@@ -1,0 +1,51 @@
+---
+title: "LM | Proximity and relationships "
+author: "creuden"
+date: 2021-10-01T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+image: /assets/images/01-splash.jpg
+layout: post
+subtitle: Hello World, Hello Blog
+
+---
+
+<script src="/gismarmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="test" class="section level1">
+<h1>test</h1>
+<pre><code>DiagrammeR::mermaid(&quot;
+graph LR
+  A--&gt;B
+  A--&gt;C
+  C--&gt;E
+  B--&gt;D
+  C--&gt;D
+  D--&gt;F
+  E--&gt;F
+&quot;)</code></pre>
+<p>Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let’s take a look at interpolating or predicting values in space.</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:pie"></span>
+<img src="/gismapost/unit01-03_data_driven_relationships_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+<p>For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.e. sophisticated regression statistics.</p>
+<p>Machine learning algorithms like random forest have become very popular for spatial environmental prediction. The reason is that they are able to take into account non-linear and complex relationships, and thus compensate for certain disadvantages that are present in the usual regression methods.</p>
+<div id="proximity-concepts" class="section level2">
+<h2>Proximity Concepts</h2>
+<div id="voronoi-polygons-dividing-space-geometrically" class="section level3">
+<h3>Voronoi polygons – dividing space geometrically</h3>
+<p><a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi polygons</a>{:target="_blank"} (aka Thiessen polygons) are an elementary method for geometrically determining <em>proximity</em> or <em>neighborhoods</em>. Voronoi polygons (see figure below) divide an area into regions that are closest to a given point that belongs to a set of irregularly distributed points. In two dimensions, a Voronoi polygon encompasses an area around a point, such that every spatial point in the polygon is closer to this point than to any other point in the set. Such constructs can also be formed in higher dimensions, giving rise to Voronoi polyhedra.</p>
+</div>
+</div>
+</div>

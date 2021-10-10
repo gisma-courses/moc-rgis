@@ -1,0 +1,93 @@
+baseurl: https://github.com/gisma
+title: gisma-tinkering
+theme: hugo-theme-cleanwhite
+languageCode: en-us
+disqusShortname: ''
+googleAnalytics: ''
+preserveTaxonomyNames: yes
+paginate: 5
+hasCJKLanguage: yes
+outputs:
+  home:
+    - HTML
+    - RSS
+    - Algolia
+params:
+  SEOTitle: GI & more
+  about_me: yes
+  addtional_menus:
+    - href: /top/books/
+      title: BOOKS
+    - href: /top/archive/
+      title: ARCHIVE
+    - href: /top/about/
+      title: ABOUT
+  algolia:
+    params:
+      - categories
+      - tags
+    vars:
+      - title
+      - summary
+      - date
+      - publishdate
+      - expirydate
+      - permalink
+  algolia_apiKey: ''
+  algolia_appId: ''
+  algolia_indexName: ''
+  algolia_search: yes
+  ba_track_id: ''
+  bookmark_link:
+    - href: https://martinfowler.com
+      title: Martin Fowler
+    - href: http://www.servicemesher.com
+      title: ServiceMesher
+    - href: https://pxhere.com
+      title: Pxhere
+    - href: https://unsplash.com
+      title: unsplash
+  bookmarks: no
+  description: ''
+  disqus_proxy: ''
+  disqus_site: ''
+  featured_condition_size: 1
+  featured_tags: yes
+  friend_link:
+    - href: ''
+      title: ''
+  friends: yes
+  header_image: img/home-bg-jeep.jpg
+  image_404: img/404-bg.jpg
+  keyword: Micro-Remotesensing
+  leancloud_app_id: ''
+  leancloud_app_key: ''
+  omit_categories: no
+  page_view_conter: no
+  reward: no
+  sidebar_about_description:  Open Source Enthusiast 
+  sidebar_avatar: img/creu.png
+  slogan: 
+  social:
+    email: creuden@gmail.com
+    github: https://github.com/gisma
+    linkedin: 
+    rss: yes
+    stackoverflow: 
+    wechat: 
+  title_404:  :(
+outputFormats:
+  Algolia:
+    baseName: algolia
+    isPlainText: yes
+    mediaType: application/json
+    notAlternative: yes
+markup:
+  highlight:
+    style: dracula
+  tableOfContents:
+    endLevel: 2
+    startLevel: 1
+renderer:
+  unsafe: true
+diagram: true 
