@@ -3,9 +3,11 @@ title: LM | People in Space 22
 author: Chris Reudenbach
 date: '2021-10-10'
 categories:
-  - courses
+- courses
+- rgis
 tags:
-  - course 1
+- rgis 
+- unit01
 toc: yes
 image: "assets/images/02-splash.jpg"
 caption: "Yay! It works!"

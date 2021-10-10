@@ -16,6 +16,9 @@ caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wel
 Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.
 <!--more-->
 
+```{r echo=FALSE}
+xfun::embed_file('../../post/2020-12-02-unit01/suisse6.html')
+```
 
 ## Concepts of spatial representation
 Geographic or spatial representations are the basis for a scientific interpretation of spatio-temporal aspects of the real world. Science customarily considers these to be valid rules (axioms). 
