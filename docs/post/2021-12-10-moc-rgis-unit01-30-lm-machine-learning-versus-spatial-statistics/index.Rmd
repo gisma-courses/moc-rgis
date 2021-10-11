@@ -32,10 +32,8 @@ Machine learning algorithms like random forest have become very popular for spat
 ### Voronoi polygons -- dividing space geometrically
 [Voronoi polygons](https://en.wikipedia.org/wiki/Voronoi_diagram){:target="_blank"} (aka Thiessen polygons) are an elementary method for geometrically determining *proximity* or *neighborhoods*. Voronoi polygons (see figure below) divide an area into regions that are closest to a given point that belongs to a set of irregularly distributed points. In two dimensions, a Voronoi polygon encompasses an area around a point, such that every spatial point in the polygon is closer to this point than to any other point in the set. Such constructs can also be formed in higher dimensions, giving rise to Voronoi polyhedra.
 
- include media1 url="assets/images/unit01/suisse1.html" 
- 
-[Full-screen version of the map]({{ site.baseurl }}/assets/images/unit01/suisse1.html){:target="_blank"} 
-<figure>
+ ![](images/suisse1.html){width=100% height=100%}
+
   <figcaption>The blue dots are a typical example of irregularly distributed points in space -- in this case, rain gauges in Switzerland. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)" </figcaption>
 </figure>
 
@@ -51,7 +49,7 @@ But what if we know more about the spatial relationships of the features? Let's 
 ### Continously filling the gaps by interpolation
 To get started, take a look at the following figure, which shows you (in addition to the overlaid Voronoi tessellation) six different interpolation methods to derive the spatial distribution of precipitation in Switzerland. 
 
-![](images/suisse6.html){width=900px height=1080px}
+![](images/suisse6.html){width=900px height=1280px}
 <figure>
   <figcaption>The blue dots are a typical example of irregularly distributed points in space -- in this case, rain gauges in Switzerland. The size of each dot corresponds to the amount of precipitation in mm. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)" 
 top left: Nearest neighbor interpolation based on 3-5 nearest neighbors, top right: Inverse Distance weighting (IDW) interpolation method
@@ -77,9 +75,7 @@ What makes things even more complex is that representativeness, homogeneity, spa
 Machine learning methods such as random forest can also produce spatial and temporal predictions (i.e. produce maps from point observations). 
 These methods are particularly robust because they take spatial autocorrelation into account, which can improve predictions or interpolations by adding geographic distances. This ultimately leads to better maps with much more complex relationships and dependencies.
 In the simplest case, the results are comparable to the well-known model-based geostatistics. The advantage of ML methods over model-based geostatistics, however, is that they make fewer assumptions, can take non-linearities into account and are easier to automate.
-
-{% include media3 url="assets/images/unit01/ML_interpol.png"%}
-
+![](images/ML_interpol.png){width=100% height=100%}
 <figure>
   <figcaption> The original dataset (top left) is a terrain model reduced to 8 meters with 48384 single pixels. 
 For interpolation, 1448 points were randomly drawn and interpolated with conventional kriging (top right), support vector machines (SVM) (middle left), neural networks (middle right), and two variants of random forest (bottom row). In each method, only the distance of the drawn points is used as a dependency.   
@@ -134,13 +130,14 @@ The error measures are correlated to the visual results: Kriging and the neural 
 
 ## Video
 Placeholder, for now:
+{{< cv2 "/gisma-courses/assets/pdfs/GeoAI-01-01_Intro.pdf" >}}
 
-{% include pdf pdf="GeoAI-01-01_Intro.pdf" %}
+
 
 
 ## Unit 1 slides
 
-{% include pdf pdf="GeoAI-Unit01.pdf" %}
+{{< cv2 "/gisma-courses/assets/pdfs/GeoAI-01-01_Intro.pdf" >}}
 
 
 ## Additional references

@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="rgis" />
-    <meta property="og:title" content="rgis" />
-    <meta property="twitter:title" content="rgis" />
+    <meta name="title" content="unit01" />
+    <meta property="og:title" content="unit01" />
+    <meta property="twitter:title" content="unit01" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Micro-Remotesensing">
     <link rel="shortcut icon" href="/moc-rgis/img/favicon.ico">
 
-    <title>rgis-Spatial Analysis with R</title>
+    <title>unit01-Spatial Analysis with R</title>
 
-    <link rel="canonical" href="/moc-rgis/moc-rgis/tags/rgis/">
+    <link rel="canonical" href="/moc-rgis/moc-rgis/categories/unit01/">
 
     <link rel="stylesheet" href="/moc-rgis/css/iDisqus.min.css"/>
 
@@ -193,78 +193,21 @@
             
 
 <div class="post-preview">
-    <a href="https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/">
+    <a href="https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01/unit01-02_proximity_does_not_make_relationships/">
         <h2 class="post-title">
-            LM | Machine Learning versus spatial statistics
+            LM | Proximity and relationships
         </h2>
-	
-        <h3 class="post-subtitle">
-            thats a subtitle
-        </h3>
 	
         <div class="post-content-preview">
 	
-            description and what a description
-        
+            pdf include /gisma-courses/assets/pdfs/web/viewer.html?file=/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf  generic rendering of scripts library(tigris) library(acs14lite) set_api_key(&#34;Your Census API key here&#34;) atx &lt;- tracts(&#39;TX&#39;, &#39;Travis&#39;) inc &lt;- acs14(geography = &#39;tract&#39;, variable = &#39;B19013_001E&#39;, state = &#39;TX&#39;, county = &#39;Travis&#39;) inc$GEOID &lt;- paste0(inc$state, inc$county, inc$tract) atx &lt;- geo_join(atx, inc, by = &#39;GEOID&#39;) atx$income &lt;- atx$B19013_001E saveRDS(atx, &#39;travis.rds&#39;)  links   Title  Text
+gist  local file ## mpg course basic setup # install/check from github devtools::install_github(&#34;envima/envimaR&#34;) packagesToLoad = c(&#34;mapview&#34;, &#34;raster&#34;, &#34;sf&#34;) # Source setup script require(envimaR) rootDir = envimaR::alternativeEnvi(root_folder = &#34;~/edu/geoAI&#34;, alt_env_id = &#34;COMPUTERNAME&#34;, alt_env_value = &#34;PCRZP&#34;, alt_env_root_folder = &#34;F:/BEN/edu&#34;) &#34;run/&#34;, # folder for runtime data storage # Now set automatically root direcory, folder structure and load libraries envrmt = envimaR::createEnvi(root_folder = rootDir, folders = projectDirList, path_prefix = &#34;path_&#34;, libs = packagesToLoad, alt_env_id = &#34;COMPUTERNAME&#34;, alt_env_value = &#34;PCRZP&#34;, alt_env_root_folder = &#34;F:/BEN/edu&#34;) ## set raster temp path raster::rasterOptions(tmpdir = envrmt$path_tmp)  The first law of geography in heterogeneous spaces We return to Tobler&rsquo;s First Law (TFL), which in a way made geographic history with the proximity concept, although this simplification was postulated primarily for reasons of the weak performance of 1970s-era computers.
+       
         </div>
     </a>
     <p class="post-meta">
     
-        Posted byChris Reudenbach  Sunday, October 10, 2021
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/">
-        <h2 class="post-title">
-            Space needs a scope
-        </h2>
-	
-        <h3 class="post-subtitle">
-            thats a subtitle
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            description
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted byChris Reudenbach  Sunday, October 10, 2021
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-00-overview/">
-        <h2 class="post-title">
-            Space needs a scope 1
-        </h2>
-	
-        <h3 class="post-subtitle">
-            thats a subtitle
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            description
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted byChris Reudenbach  Sunday, October 10, 2021
+        Posted bySpatial Analysis with R  Monday, January 1, 0001
         
         
     
@@ -276,6 +219,15 @@
 
             
 
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/moc-rgis/categories/unit01/">&larr; Newer Posts</a>
+    </li>
+    
+    
+</ul>
 
 
        	</div>
@@ -329,7 +281,7 @@
            <ul class="list-inline">
                
                <li>
-                   <a href='/moc-rgis/tags/rgis/index.xml' rel="alternate" type="application/rss+xml" title="Spatial Analysis with R" >
+                   <a href='/moc-rgis/categories/unit01/index.xml' rel="alternate" type="application/rss+xml" title="Spatial Analysis with R" >
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -414,7 +366,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/moc-rgis/tags/rgis/index.xml' rel="alternate" type="application/rss+xml" title="Spatial Analysis with R" >
+                       <a href='/moc-rgis/categories/unit01/index.xml' rel="alternate" type="application/rss+xml" title="Spatial Analysis with R" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

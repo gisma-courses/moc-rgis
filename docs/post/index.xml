@@ -8,14 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LM | Machine Learning versus spatial statistics </title>
+      <title>LM | Machine Learning versus spatial statistics</title>
       <link>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/</guid>
-      <description>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
- Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let’s take a look at interpolating or predicting values in space.
-For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.</description>
+      <description>Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let&amp;rsquo;s take a look at interpolating or predicting values in space.
+For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.e. sophisticated regression statistics.
+Machine learning algorithms like random forest have become very popular for spatial environmental prediction.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ For many decades, deterministic interpolation techniques (inverse distance weigh
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01/unit01-02_proximity_does_not_make_relationships/</guid>
-      <description>pdf include /gisma-courses/assets/pdfs/web/viewer.html?file=/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf  generic rendering of scripts library(tigris) library(acs14lite) set_api_key(&amp;#34;Your Census API key here&amp;#34;) atx &amp;lt;- tracts(&amp;#39;TX&amp;#39;, &amp;#39;Travis&amp;#39;) inc &amp;lt;- acs14(geography = &amp;#39;tract&amp;#39;, variable = &amp;#39;B19013_001E&amp;#39;, state = &amp;#39;TX&amp;#39;, county = &amp;#39;Travis&amp;#39;) inc$GEOID &amp;lt;- paste0(inc$state, inc$county, inc$tract) atx &amp;lt;- geo_join(atx, inc, by = &amp;#39;GEOID&amp;#39;) atx$income &amp;lt;- atx$B19013_001E saveRDS(atx, &amp;#39;travis.rds&amp;#39;)  links   Title  Text
+      <description>pdf include /moc-rgis/assets/pdfs/web/viewer.html?file=/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf  generic rendering of scripts library(tigris) library(acs14lite) set_api_key(&amp;#34;Your Census API key here&amp;#34;) atx &amp;lt;- tracts(&amp;#39;TX&amp;#39;, &amp;#39;Travis&amp;#39;) inc &amp;lt;- acs14(geography = &amp;#39;tract&amp;#39;, variable = &amp;#39;B19013_001E&amp;#39;, state = &amp;#39;TX&amp;#39;, county = &amp;#39;Travis&amp;#39;) inc$GEOID &amp;lt;- paste0(inc$state, inc$county, inc$tract) atx &amp;lt;- geo_join(atx, inc, by = &amp;#39;GEOID&amp;#39;) atx$income &amp;lt;- atx$B19013_001E saveRDS(atx, &amp;#39;travis.rds&amp;#39;)  links   Title  Text
 gist  local file ## mpg course basic setup # install/check from github devtools::install_github(&amp;#34;envima/envimaR&amp;#34;) packagesToLoad = c(&amp;#34;mapview&amp;#34;, &amp;#34;raster&amp;#34;, &amp;#34;sf&amp;#34;) # Source setup script require(envimaR) rootDir = envimaR::alternativeEnvi(root_folder = &amp;#34;~/edu/geoAI&amp;#34;, alt_env_id = &amp;#34;COMPUTERNAME&amp;#34;, alt_env_value = &amp;#34;PCRZP&amp;#34;, alt_env_root_folder = &amp;#34;F:/BEN/edu&amp;#34;) &amp;#34;run/&amp;#34;, # folder for runtime data storage # Now set automatically root direcory, folder structure and load libraries envrmt = envimaR::createEnvi(root_folder = rootDir, folders = projectDirList, path_prefix = &amp;#34;path_&amp;#34;, libs = packagesToLoad, alt_env_id = &amp;#34;COMPUTERNAME&amp;#34;, alt_env_value = &amp;#34;PCRZP&amp;#34;, alt_env_root_folder = &amp;#34;F:/BEN/edu&amp;#34;) ## set raster temp path raster::rasterOptions(tmpdir = envrmt$path_tmp)  The first law of geography in heterogeneous spaces We return to Tobler&amp;rsquo;s First Law (TFL), which in a way made geographic history with the proximity concept, although this simplification was postulated primarily for reasons of the weak performance of 1970s-era computers.</description>
     </item>
     

@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="LM | Machine Learning versus spatial statistics" />
-    <meta property="og:title" content="LM | Machine Learning versus spatial statistics" />
-    <meta property="twitter:title" content="LM | Machine Learning versus spatial statistics" />
+    <meta name="title" content="People in Space" />
+    <meta property="og:title" content="People in Space" />
+    <meta property="twitter:title" content="People in Space" />
     
 
     
-    <meta name="description" content="description and what a description">
-    <meta property="og:description" content="description and what a description" />
-    <meta property="twitter:description" content="description and what a description" />
+    <meta name="description" content="description">
+    <meta property="og:description" content="description" />
+    <meta property="twitter:description" content="description" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Micro-Remotesensing">
     <link rel="shortcut icon" href="/moc-rgis/img/favicon.ico">
 
-    <title>LM | Machine Learning versus spatial statistics-Spatial Analysis with R</title>
+    <title>People in Space-Spatial Analysis with R</title>
 
-    <link rel="canonical" href="/moc-rgis/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/">
+    <link rel="canonical" href="/moc-rgis/moc-rgis/post/2021-12-10-moc-rgis-unit01-20-people-in-space/">
 
     <link rel="stylesheet" href="/moc-rgis/css/iDisqus.min.css"/>
 
@@ -186,7 +186,7 @@
                         </a>
                         
                     </div>
-                    <h1>LM | Machine Learning versus spatial statistics</h1>
+                    <h1>People in Space</h1>
                     <h2 class="subheading">thats a subtitle</h2>
                     <span class="meta">
                         
@@ -195,7 +195,7 @@
                                 Chris Reudenbach
                              
                             on 
-                            Sunday, October 10, 2021
+                            Friday, December 10, 2021
                             
                             
                             
@@ -221,73 +221,40 @@
                 post-container">
 
                 
-                <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let&rsquo;s take a look at interpolating or predicting values in space.</p>
-<p>For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.e. sophisticated regression statistics.</p>
-<p>Machine learning algorithms like random forest have become very popular for spatial environmental prediction. The reason is that they are able to take into account non-linear and complex relationships, and thus compensate for certain disadvantages that are present in the usual regression methods.</p>
-<h2 id="proximity-concepts">Proximity Concepts</h2>
-<h3 id="voronoi-polygons----dividing-space-geometrically">Voronoi polygons &ndash; dividing space geometrically</h3>
-<p><a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi polygons</a>{:target=&quot;_blank&quot;} (aka Thiessen polygons) are an elementary method for geometrically determining <em>proximity</em> or <em>neighborhoods</em>. Voronoi polygons (see figure below) divide an area into regions that are closest to a given point that belongs to a set of irregularly distributed points. In two dimensions, a Voronoi polygon encompasses an area around a point, such that every spatial point in the polygon is closer to this point than to any other point in the set. Such constructs can also be formed in higher dimensions, giving rise to Voronoi polyhedra.</p>
-<p>
-  <img src="images/suisse1.html" alt="">
-
-{width=100% height=100%}</p>
-<!-- raw HTML omitted -->
-<p>Since Voronoi polygons correspond to an organizational principle frequently observed in nature (e.g. plant cells) and in the spatial sciences (e.g. <a href="https://en.wikipedia.org/wiki/Central_place_theory">central places</a>{:target=&quot;_blank&quot;}, according to Christaller), there are manifold possible applications. Two things must be assumed, however: First, that nothing else is known about the space between the sampled locations and, second, that the boundary line between two samples marks the point of equal distance.</p>
-<p>Voronoi polygons can also be used to delineate catchment areas of shops, service facilities or wells, like in the example of the Soho cholera outbreak. Please note that within a polygon, one of the spatial features is isomorphic, i.e. the spatial features are identical.</p>
-<p>But what if we know more about the spatial relationships of the features? Let&rsquo;s have a look at some crucial concepts.</p>
-<h3 id="spatial-interpolation-of-data">Spatial interpolation of data</h3>
-<p><em>Spatially interpolating</em> data points provides us with a modeled quasi-continuous estimation of features under the corresponding assumptions. But what is spatial interpolation? This means using values that are known to calculate unknown neighboring values. Most of these techniques are among the most complex methods of spatial analysis, so we will deliberately limit ourselves here to a basic overview of the methods. Some of the best-known and common interpolation methods found in spatial sciences are <em>nearest neighbor</em> <em>inverse distance</em>, <em>spline interpolations</em>, <em>kriging</em>, and <em>regression methods</em>.</p>
-<h3 id="continously-filling-the-gaps-by-interpolation">Continously filling the gaps by interpolation</h3>
-<p>To get started, take a look at the following figure, which shows you (in addition to the overlaid Voronoi tessellation) six different interpolation methods to derive the spatial distribution of precipitation in Switzerland.</p>
-<p>
-  <img src="images/suisse6.html" alt="">
-
-{width=900px height=1280px}</p>
-<!-- raw HTML omitted -->
-<p>In the example of precipitation in Switzerland, the positions of the meteorological measuring stations are fixed and cannot be freely chosen.</p>
-<p>When choosing an appropriate interpolation method, you need to pay attention to the following properties of the samples (distribution and properties of the measuring points):</p>
-<ul>
-<li><strong>Representativeness of measuring points:</strong> The sample should represent the phenomenon being analyzed in all of its manifestations.</li>
-<li><strong>Homogeneity of measuring points:</strong> The spatial interdependence of the data is a very important basic requirement for further meaningful analysis.</li>
-<li><strong>Spatial distribution of measuring points:</strong> The spatial distribution is of great importance. It can be completely random, regular or clustered.</li>
-<li><strong>Number of measuring points:</strong> The number of measurement points depends on the phenomenon and the area. In most cases, the choice of sample size is subject to practical limitations.</li>
-</ul>
-<p>What makes things even more complex is that representativeness, homogeneity, spatial distribution and size are all interrelated. For example, a sample size of 5 measuring stations for estimating precipitation for all of Switzerland is hardly meaningful and therefore not representative. Equally unrepresentative would be selecting every measuring station in German-speaking Switzerland to estimate  precipitation for the entire country. In this case, the number alone might be sufficient, but the spatial distribution would not be. If you now select every station at an altitude below 750 m asl, the sample could be correct in terms of both size and spatial distribution, but the phenomenon is not homogeneously represented in the sample. An estimate based on this sample would be clearly distorted, especially in areas above 750 m asl. In practice, virtually every natural spatially-continuous phenomenon is governed by stochastic fluctuations, so it can only be described mathematically in approximate terms.</p>
-<h3 id="machine-learning">Machine learning</h3>
-<p>Machine learning methods such as random forest can also produce spatial and temporal predictions (i.e. produce maps from point observations).
-These methods are particularly robust because they take spatial autocorrelation into account, which can improve predictions or interpolations by adding geographic distances. This ultimately leads to better maps with much more complex relationships and dependencies.
-In the simplest case, the results are comparable to the well-known model-based geostatistics. The advantage of ML methods over model-based geostatistics, however, is that they make fewer assumptions, can take non-linearities into account and are easier to automate.
-
-  <img src="images/ML_interpol.png" alt="">
-
-{width=100% height=100%}</p>
-<!-- raw HTML omitted -->
-<p>Every interpolation was applied using the &ldquo;default&rdquo; settings. Tuning could possibly lead to significant changes in all of them.
-The error measures are correlated to the visual results: Kriging and the neural network show the best performance, followed by the random forest models and the support-vector machine.</p>
-<!-- raw HTML omitted -->
-<h2 id="video">Video</h2>
+                </p>
+<div id="natures-contributions-to-people" class="section level2">
+<h2>Nature’s Contributions to People</h2>
+<p>As an evolution of the the economic and scientific conceptualization of the <a href="https://www.millenniumassessment.org/en/index.html" target="_blank">Millennium Ecosystem Assessment</a> of such interrelationships, which focuses on economically assessable ecosystem services, the Nature’s Contributions to People (NCP) approach offers the possibility to abstract the positive and negative contributions of nature, the diversity of organisms, ecosystems and the associated ecological and evolutionary processes to human’s quality of life depending on the cultural, socio-economic, temporal or spatial context.</p>
+<p>This framework by the <a href="https://ipbes.net/" target="_blank">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services</a> (IPBES) strives to <em>“assess and promote knowledge of Earth’s biodiversity and ecosystems and their contribution to human societies in order to inform policy formulation.”</em> For more insight, please read the <a href="https://science.sciencemag.org/content/359/6373/270.full?ijkey=/vA6P5O/b2eSM&amp;keytype=ref&amp;siteid=sci" target="_blank">full paper</a>.</p>
+</div>
+<div id="why-do-we-need-spatial-knowledge-of-processes" class="section level2">
+<h2>Why do we need spatial knowledge of processes?</h2>
+<p>Considering the above context, because space matters for all kinds of interactions between nature and people. Let’s illustrate this point by considering a famous historical example.</p>
+<p>In 1854, the London district Soho experienced a <a href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">cholera outbreak</a>. While the prevailing theory of disease at the time suggested that airborne particles (“miasma”) was the source of the outbreak, <a href="https://en.wikipedia.org/wiki/John_Snow">Dr. John Snow</a> had another idea. After interviewing residents, he theorized that the public water pump on Broad Street was responsible for the outbreak. Dr. Snow mapped the cases, visualizing the connection between space (distribution of cholera deaths and pumps in Soho, London) and spatial processes (water retrieval). He showed that the closer a house was located to the Broad Street water pump, the greater number of cholera-related deaths occurred there.</p>
+<div class="figure">
+<img src="images/Snow-cholera-map.jpg" alt="" />
+<p class="caption">Dr. John Snow’s map of the 1854 cholera outbreak in Soho, London via <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/A_map_taken_from_a_report_by_Dr._John_Snow_Wellcome_L0072917.jpg/646px-A_map_taken_from_a_report_by_Dr._John_Snow_Wellcome_L0072917.jpg" target="_blank">Wikimedia Commons</a></p>
+</div>
+</div>
+<div id="what-is-the-role-of-artificial-intelligence" class="section level2">
+<h2>What is the role of Artificial Intelligence?</h2>
+<p>Linking nature and people, we are still in the same realm that started with Dr. Snow. Yet it is much more complex. Regardless of whether we are interested in air temperature, degree of vegetation coverage, or solar irradiance at a given location, geodata always have a spatial component. But just because two points on Earth are close together, they are not necessarily similar in every respect. After all, different topographies can mean that moving just a few meters in one direction has a very drastic result in your altitude – valleys, cliffs or mountain peaks are just a few clear examples of this idea.</p>
+<p>And even more, all these aspects are influenced by the people who act, who continuously exert influence as actors, who implement the processes culturally and economically differently. In order to be able to recognize valid patterns and structures in this complexity and to arrive at relevant statements and insights, parametric or deterministic models are insufficient. We need intelligent self-learning methods of data analysis and data retrieval.</p>
+</div>
+<div id="video" class="section level2">
+<h2>Video</h2>
 <p>Placeholder, for now:</p>
-
-
-
-/moc-rgis/assets/pdfs/web/viewer.html?file=/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf
-<!DOCTYPE html>
-<iframe id="pdf-js-viewer" src="/moc-rgis/assets/pdfs/web/viewer.html?file=/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf" title="webviewer" align="center" frameborder="0" width="1000" height="800"></iframe>
-
-<h2 id="unit-1-slides">Unit 1 slides</h2>
-
-
-
-/moc-rgis/assets/pdfs/web/viewer.html?file=/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf
-<!DOCTYPE html>
-<iframe id="pdf-js-viewer" src="/moc-rgis/assets/pdfs/web/viewer.html?file=/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf" title="webviewer" align="center" frameborder="0" width="1000" height="800"></iframe>
-
-<h2 id="additional-references">Additional references</h2>
-<p>Get the Most Out of AI, Machine Learning, and Deep Learning <a href="https://www.youtube.com/watch?v=KiKjforteXs">Part 1</a>{:target=&quot;_blank&quot;} (10:52) and <a href="https://www.youtube.com/watch?v=Ys33AhNDwC4">Part 2</a>{:target=&quot;_blank&quot;} (13:18)</p>
-<p><a href="https://youtu.be/reY50t2hbuM">Why You Should NOT Learn Machine Learning!</a>{:target=&quot;_blank&quot;} (6:17)</p>
-<p><a href="https://youtu.be/aKq50YM8a8w">GeoAI: Machine Learning meets ArcGIS</a>{:target=&quot;_blank&quot;} (8:50)</p>
+<p>{{% tweet "1234567" %}}</p>
+<p>{% include pdf pdf=“GeoAI-01-01_Intro.pdf” %}</p>
+</div>
+<div id="unit-1-slides" class="section level2">
+<h2>Unit 1 slides</h2>
+<p>{% include pdf pdf=“GeoAI-Unit01.pdf” %}</p>
+</div>
+<div id="additional-resources" class="section level2">
+<h2>Additional resources</h2>
+<p>Peter Lindbrook’s <a href="https://github.com/lindbrook/cholera">cholera</a> package offers an R-based reanalysis of the Soho cholera outbreak and brings to bear a number of technical, scientific and GI-related concepts that will be applicable throughout the course.</p>
+</div>
 
 
                 
@@ -296,7 +263,7 @@ The error measures are correlated to the visual results: Kriging and the neural 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/moc-rgis/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/" data-toggle="tooltip" data-placement="top" title="Space needs a scope">&larr;
+                        <a href="/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/" data-toggle="tooltip" data-placement="top" title="LM | Machine Learning versus spatial statistics ">&larr;
                             Previous Post</a>
                     </li>
                     
