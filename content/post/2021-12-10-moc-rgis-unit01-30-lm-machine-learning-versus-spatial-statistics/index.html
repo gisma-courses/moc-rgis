@@ -11,7 +11,7 @@ tags:
   - unit01
 toc: true
 subtitle: 'thats a subtitle'
-description: 'description'
+description: 'description and what a description'
 image: '/assets/images/01-splash.jpg'
 ---
 
@@ -33,14 +33,14 @@ image: '/assets/images/01-splash.jpg'
 <div id="voronoi-polygons-dividing-space-geometrically" class="section level3">
 <h3>Voronoi polygons – dividing space geometrically</h3>
 <p><a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi polygons</a>{:target="_blank"} (aka Thiessen polygons) are an elementary method for geometrically determining <em>proximity</em> or <em>neighborhoods</em>. Voronoi polygons (see figure below) divide an area into regions that are closest to a given point that belongs to a set of irregularly distributed points. In two dimensions, a Voronoi polygon encompasses an area around a point, such that every spatial point in the polygon is closer to this point than to any other point in the set. Such constructs can also be formed in higher dimensions, giving rise to Voronoi polyhedra.</p>
-{% include media1 url=“assets/images/unit01/suisse1.html” %}
+<p>include media1 url=“assets/images/unit01/suisse1.html”</p>
 <a href="%7B%7B%20site.baseurl%20%7D%7D/assets/images/unit01/suisse1.html">Full-screen version of the map</a>{:target="_blank"}
 <figure>
 <figcaption>
 The blue dots are a typical example of irregularly distributed points in space – in this case, rain gauges in Switzerland. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)"
 </figcaption>
 </figure>
-<p>Since Voronoi polygons correspond to an organizational principle frequently observed in nature (e.g. plant cells) and in the spatial sciences (e.g. <a href="https://en.wikipedia.org/wiki/Central_place_theory">central places</a>{:target="_blank"}, according to Christaller), there are manifold possible applications. Two things must be assumed, however: First, that nothing else is known about the space between the sampled locations and, second, that the boundary line between two samples is <strong>incomplete idea</strong>.</p>
+<p>Since Voronoi polygons correspond to an organizational principle frequently observed in nature (e.g. plant cells) and in the spatial sciences (e.g. <a href="https://en.wikipedia.org/wiki/Central_place_theory">central places</a>{:target="_blank"}, according to Christaller), there are manifold possible applications. Two things must be assumed, however: First, that nothing else is known about the space between the sampled locations and, second, that the boundary line between two samples marks the point of equal distance.</p>
 <p>Voronoi polygons can also be used to delineate catchment areas of shops, service facilities or wells, like in the example of the Soho cholera outbreak. Please note that within a polygon, one of the spatial features is isomorphic, i.e. the spatial features are identical.</p>
 <p>But what if we know more about the spatial relationships of the features? Let’s have a look at some crucial concepts.</p>
 </div>
@@ -51,7 +51,7 @@ The blue dots are a typical example of irregularly distributed points in space �
 <div id="continously-filling-the-gaps-by-interpolation" class="section level3">
 <h3>Continously filling the gaps by interpolation</h3>
 <p>To get started, take a look at the following figure, which shows you (in addition to the overlaid Voronoi tessellation) six different interpolation methods to derive the spatial distribution of precipitation in Switzerland.</p>
-<p>{{&lt; myiframe “static/cases/suisse6.html” &gt;}}</p>
+<embed src="images/suisse6.html" width="900" height="1080" />
 <figure>
 <figcaption>
 The blue dots are a typical example of irregularly distributed points in space – in this case, rain gauges in Switzerland. The size of each dot corresponds to the amount of precipitation in mm. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)"

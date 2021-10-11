@@ -11,7 +11,7 @@ tags:
   - unit01
 toc: true
 subtitle: 'thats a subtitle'
-description: 'description'
+description: 'description and what a description'
 image: '/assets/images/01-splash.jpg'
 ---
 <style>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;}</style>
@@ -51,12 +51,7 @@ But what if we know more about the spatial relationships of the features? Let's 
 ### Continously filling the gaps by interpolation
 To get started, take a look at the following figure, which shows you (in addition to the overlaid Voronoi tessellation) six different interpolation methods to derive the spatial distribution of precipitation in Switzerland. 
 
-
-
-{{< myiframe "static/cases/suisse6.html" >}}
-
-
-
+![](images/suisse6.html){width=900px height=1080px}
 <figure>
   <figcaption>The blue dots are a typical example of irregularly distributed points in space -- in this case, rain gauges in Switzerland. The size of each dot corresponds to the amount of precipitation in mm. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)" 
 top left: Nearest neighbor interpolation based on 3-5 nearest neighbors, top right: Inverse Distance weighting (IDW) interpolation method
