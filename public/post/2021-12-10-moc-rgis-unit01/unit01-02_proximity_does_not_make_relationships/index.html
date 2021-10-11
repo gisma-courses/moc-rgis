@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Spatial Analysis with R">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://github.com/gisma-courses/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://github.com/gisma-courses/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="LM | Proximity and relationships" />
+    <meta property="og:title" content="LM | Proximity and relationships" />
+    <meta property="twitter:title" content="LM | Proximity and relationships" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Micro-Remotesensing">
+    <link rel="shortcut icon" href="/gisma-courses/img/favicon.ico">
+
+    <title>LM | Proximity and relationships-Spatial Analysis with R</title>
+
+    <link rel="canonical" href="/gisma-courses/gisma-courses/post/2021-12-10-moc-rgis-unit01/unit01-02_proximity_does_not_make_relationships/">
+
+    <link rel="stylesheet" href="/gisma-courses/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/gisma-courses/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/gisma-courses/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/gisma-courses/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/gisma-courses/js/jquery.min.js"></script>
+
+    
+    <script src="/gisma-courses/js/bootstrap.min.js"></script>
+
+    
+    <script src="/gisma-courses/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/gisma-courses/">Spatial Analysis with R</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/gisma-courses/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/gisma-courses/categories/courses">courses</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/gisma-courses/categories/rgis">rgis</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/gisma-courses/categories/unit01">unit01</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/gisma-courses/top/books/">BOOKS</a></li>
+                    
+                        <li><a href="/gisma-courses/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/gisma-courses/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/gisma-courses/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/gisma-courses/assets/images/01-splash.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/gisma-courses/tags/unit01" title="unit01">
+                            unit01
+                        </a>
+                        
+                    </div>
+                    <h1>LM | Proximity and relationships</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    Spatial Analysis with R
+                             
+                            on 
+                            Monday, January 1, 0001
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h1 id="pdf-include">pdf include</h1>
+
+
+
+/gisma-courses/assets/pdfs/web/viewer.html?file=/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf
+<!DOCTYPE html>
+<iframe id="pdf-js-viewer" src="/gisma-courses/assets/pdfs/web/viewer.html?file=/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf" title="webviewer" align="center" frameborder="0" width="1000" height="800"></iframe>
+
+<h1 id="generic-rendering-of-scripts">generic rendering of scripts</h1>
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#50fa7b">library</span>(tigris)
+<span style="color:#50fa7b">library</span>(acs14lite)
+
+<span style="color:#50fa7b">set_api_key</span>(<span style="color:#f1fa8c">&#34;Your Census API key here&#34;</span>)
+
+atx <span style="color:#ff79c6">&lt;-</span> <span style="color:#50fa7b">tracts</span>(<span style="color:#f1fa8c">&#39;TX&#39;</span>, <span style="color:#f1fa8c">&#39;Travis&#39;</span>)
+
+inc <span style="color:#ff79c6">&lt;-</span> <span style="color:#50fa7b">acs14</span>(geography <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;tract&#39;</span>, variable <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;B19013_001E&#39;</span>, 
+             state <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;TX&#39;</span>, county <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;Travis&#39;</span>)
+
+inc<span style="color:#ff79c6">$</span>GEOID <span style="color:#ff79c6">&lt;-</span> <span style="color:#50fa7b">paste0</span>(inc<span style="color:#ff79c6">$</span>state, inc<span style="color:#ff79c6">$</span>county, inc<span style="color:#ff79c6">$</span>tract)
+
+atx <span style="color:#ff79c6">&lt;-</span> <span style="color:#50fa7b">geo_join</span>(atx, inc, by <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;GEOID&#39;</span>)
+
+atx<span style="color:#ff79c6">$</span>income <span style="color:#ff79c6">&lt;-</span> atx<span style="color:#ff79c6">$</span>B19013_001E
+
+<span style="color:#50fa7b">saveRDS</span>(atx, <span style="color:#f1fa8c">&#39;travis.rds&#39;</span>)
+</code></pre></div>
+
+
+<h1 id="links">links</h1>
+<p>
+  <figure>
+    <img src="https://w.wiki/QtV" alt="links">
+    <center><figcaption>Title</figcaption></center>
+  </figure>
+
+</p>
+<p><a href="https://www.gohugo.io" title="Title">Text</a></p>
+<h1 id="gist">gist</h1>
+<script type="application/javascript" src="https://gist.github.com/gisma/bed5f4431b6d39098a35472359bb9969.js"></script>
+
+<h1 id="local-file">local file</h1>
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#6272a4">## mpg course basic setup</span>
+<span style="color:#6272a4"># install/check from github</span>
+devtools<span style="color:#ff79c6">::</span><span style="color:#50fa7b">install_github</span>(<span style="color:#f1fa8c">&#34;envima/envimaR&#34;</span>)
+
+packagesToLoad <span style="color:#ff79c6">=</span> <span style="color:#50fa7b">c</span>(<span style="color:#f1fa8c">&#34;mapview&#34;</span>, <span style="color:#f1fa8c">&#34;raster&#34;</span>, <span style="color:#f1fa8c">&#34;sf&#34;</span>)
+
+<span style="color:#6272a4"># Source setup script</span>
+<span style="color:#50fa7b">require</span>(envimaR)
+rootDir <span style="color:#ff79c6">=</span> envimaR<span style="color:#ff79c6">::</span><span style="color:#50fa7b">alternativeEnvi</span>(root_folder <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;~/edu/geoAI&#34;</span>,
+                                   alt_env_id <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;COMPUTERNAME&#34;</span>,
+                                   alt_env_value <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;PCRZP&#34;</span>,
+                                   alt_env_root_folder <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;F:/BEN/edu&#34;</span>)
+
+
+<span style="color:#f1fa8c">&#34;run/&#34;</span>,                <span style="color:#6272a4"># folder for runtime data storage</span>
+
+<span style="color:#6272a4"># Now set automatically root direcory, folder structure and load libraries</span>
+envrmt <span style="color:#ff79c6">=</span> envimaR<span style="color:#ff79c6">::</span><span style="color:#50fa7b">createEnvi</span>(root_folder <span style="color:#ff79c6">=</span> rootDir,
+                             folders <span style="color:#ff79c6">=</span> projectDirList,
+                             path_prefix <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;path_&#34;</span>,
+                             libs <span style="color:#ff79c6">=</span> packagesToLoad,
+                             alt_env_id <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;COMPUTERNAME&#34;</span>,
+                             alt_env_value <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;PCRZP&#34;</span>,
+                             alt_env_root_folder <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;F:/BEN/edu&#34;</span>)
+<span style="color:#6272a4">## set raster temp path</span>
+raster<span style="color:#ff79c6">::</span><span style="color:#50fa7b">rasterOptions</span>(tmpdir <span style="color:#ff79c6">=</span> envrmt<span style="color:#ff79c6">$</span>path_tmp)
+</code></pre></div>
+
+
+<h2 id="the-first-law-of-geography-in-heterogeneous-spaces">The first law of geography in heterogeneous spaces</h2>
+<p>We return to Tobler&rsquo;s First Law (TFL), which in a way made geographic history with the proximity concept, although this simplification was postulated primarily for reasons of the weak performance of 1970s-era computers. However, as can be deduced from everyday observation, the relationship of things (geo-objects) in space is usually more complex than just a function of distance. Therefore, there has been an intense and lively discussion about the usefulness of TFL in the spatial sciences, see e.g. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8306.2004.09402008.x">Goodchild 2004</a>.</p>
+<p>This raises some central questions: How can spatial concepts be adequately mapped? When are neighborly relationships regular and continuous, when are they irregular or discrete, and when do they have no meaning at all?</p>
+<p>It is easier to answer these questions with a little background knowledge about the spatial representation of real-world features and processes.</p>
+<h2 id="distance-and-data-representation">Distance and data representation</h2>
+<p>The analysis of spatio-temporal processes, as we have seen in the cholera example, reaches far back into the past. The use of quantitative methods, especially statistical methods, is of considerable importance for describing and explaining spatial patterns (e.g. landscape ecology). The central concept on which these methods are based is that of proximity or location in relation to each other.</p>
+<p>Let&rsquo;s take a closer look at proximity, which is mentioned all the time. What exactly is it? How can proximity/neighborliness be expressed in such a way that the space becomes meaningful?</p>
+<p>In general, spatial relationships are described in terms of neighborhoods (positional) and distances (metric). In spatial analysis or prediction, however, it is important to be able to name the spatial <strong>influence</strong>, i.e. the evaluation or weighting of this relationship, either qualitatively or quantitatively. Tobler did this for a specific objective by stating that near is more important than far.
+But what about in other cases? The challenge is that spatial influence can only be measured directly in exceptional cases. Therefore, there are many ways to estimate it.</p>
+<h3 id="neighborhood">Neighborhood</h3>
+<p>Neighborhood is perhaps the most important concept. Higher dimensional geo-objects can be considered neighboring if they <em>touch</em> each other, e.g. neighboring countries. For zero-dimensional objects (points), the most common approach is to use distance in combination with a number of points to determine neighborhood.</p>
+<h3 id="distance">Distance</h3>
+<p>Proximity or neighborhood analyses are often concerned with areas of influence or catchment areas, i.e. spatial patterns of effects or processes.</p>
+<p>This section discusses some methods for calculating distances between spatial objects. Because of the different ways of discretizing space, we must make the - already familiar - distinction between vector and raster data models.</p>
+<p>In the beginning, it is often useful to work without spatially restrictive conditions in a first analysis, e.g. when this information is missing. The term &ldquo;proximity&rdquo; refers to a certain imprecision. Qualitative terms that can be used for this are: &ldquo;near&rdquo;, &ldquo;far&rdquo; or &ldquo;in the neighborhood of&rdquo;. Representation and data-driven analysis require these terms to be objectified and operationalized. So, this metric must be based on a distance concept, e.g. Euclidean distance or travel times. In a second interpretative step, it must then be decided which units define this type of proximity. In terms of the objective of a question, there are only suitable and less-suitable measures, not correct or incorrect ones. Therefore, it is critical to define a meaningful neighborhood relationship for the objects under investigation.</p>
+<h3 id="have-a-try">Have a try</h3>
+<p>This interactive application gives you an idea of the different concepts of neighborhood and distance.
+Please note that <em>rook</em> is the neighborhood of 4 and <em>queen</em> is the neighborhood of 8 around a point. For simplicity, the set of darts is a regular grid of 1 km<!-- raw HTML omitted -->2<!-- raw HTML omitted --> cell size in Marburg-Biedenkopf, a district in Hesse (Germany).
+Please also note that the k-nearest neighbors in a regular grid result in a spiral circular structure.
+Irregular polygons or points generate much more complex neighborhood structures, especially if they receive additional weight from further variables with spatial influence.</p>
+<!-- raw HTML omitted -->
+<h2 id="video">Video</h2>
+<p>Placeholder, for now:</p>
+<h2 id="unit-1-slides">Unit 1 slides</h2>
+<p>{% include pdf pdf=&ldquo;GeoAI-Unit01.pdf&rdquo; %}</p>
+<h2 id="further-reading">Further Reading</h2>
+<p>Ana Petrovic - <a href="https://journals.open.tudelft.nl/abe/article/view/5194/4710">Multiscale spatial contexts and neighbourhood effects</a></p>
+<p>Diaz, S., Pascual, U., Stenseke, M. et al. (2018) Assessing nature&rsquo;s contributions to people. Science Vol. 359, Issue 6373, 270-272. <a href="https://doi.org/10.1126/science.aap8826">https://doi.org/10.1126/science.aap8826</a></p>
+<p>Manning, P., van der Plas, F., Soliveres, S. et al. (2018) Redefining ecosystem multifunctionality. Nat Ecol Evol 2, 427-436. <a href="https://doi.org/10.1038/s41559-017-0461-7">https://doi.org/10.1038/s41559-017-0461-7</a></p>
+<p>Tobler, W. (2004) On the First Law of Geography: A Reply, Annals of the Association of American Geographers, 94:2, 304-310: <a href="https://doi.org/10.1111/j.1467-8306.2004.09402009.x">https://doi.org/10.1111/j.1467-8306.2004.09402009.x</a></p>
+<p><strong>4th Paper?</strong></p>
+<h2 id="assignment">Assignment</h2>
+<p>Choose one of the articles from the further reading section. Your assignment is to summarize the essence of the article in approximately one half page (5-8 sentences). Please upload your synopsis of the article to the course website.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/gisma-courses/post/2021-12-10-moc-rgis-unit01/unit01-03_data_driven_relationships/" data-toggle="tooltip" data-placement="top" title="LM | Machine Learning versus spatial statistics">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+<div id="disqus-comment"></div>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/gisma-courses/tags/rgis" title="rgis">
+                            rgis
+                        </a>
+                        
+                        
+                        
+                        <a href="/gisma-courses/tags/unit01" title="unit01">
+                            unit01
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Spatial Analysis with R" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:creuden@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/gisma">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Spatial Analysis with R 2021
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/gisma-courses\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>courses on Spatial Analysis with R</title>
+    <link>https://github.com/gisma-courses/categories/courses/</link>
+    <description>Recent content in courses on Spatial Analysis with R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/gisma-courses/categories/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LM | Machine Learning versus spatial statistics </title>
+      <link>https://github.com/gisma-courses/post/2021-10-11-lm-machine-learning-versus-spatial-statistics/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/gisma-courses/post/2021-10-11-lm-machine-learning-versus-spatial-statistics/</guid>
+      <description>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
+ Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let’s take a look at interpolating or predicting values in space.
+For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.</description>
+    </item>
+    
+    <item>
+      <title>Space needs a scope</title>
+      <link>https://github.com/gisma-courses/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/gisma-courses/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/</guid>
+      <description>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
+ Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.</description>
+    </item>
+    
+    <item>
+      <title>Space needs a scope 1</title>
+      <link>https://github.com/gisma-courses/post/2021-12-10-moc-rgis-unit01-00-overview/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/gisma-courses/post/2021-12-10-moc-rgis-unit01-00-overview/</guid>
+      <description>
+&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;}&lt;/style&gt;
+&lt;div class=&#34;myDiv&#34;&gt;
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&#34;https://en.wikipedia.org/wiki/John_Snow&#34;&gt;Dr. John Snow&lt;/a&gt; &lt;a href=&#34;https://w.wiki/QtV&#34;&gt;via wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.
+</description>
+    </item>
+    
+  </channel>
+</rss>
