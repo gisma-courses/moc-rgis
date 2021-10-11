@@ -1,5 +1,5 @@
 baseurl: https://github.com/gisma-courses
-title: rgis
+title: Spatial Analysis with R
 theme: hugo-theme-cleanwhite
 languageCode: en-us
 disqusShortname: ''
@@ -13,7 +13,7 @@ outputs:
     - RSS
     - Algolia
 params:
-  SEOTitle: GI & more
+  SEOTitle: Spatial Analysis with R
   about_me: yes
   addtional_menus:
     - href: /top/books/
@@ -47,7 +47,7 @@ params:
       title: Pxhere
     - href: https://unsplash.com
       title: unsplash
-  bookmarks: no
+  bookmarks: yes
   description: ''
   disqus_proxy: ''
   disqus_site: ''
