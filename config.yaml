@@ -1,5 +1,5 @@
-baseurl: https://github.com/gisma
-title: gisma-tinkering
+baseurl: https://github.com/gisma-courses
+title: rgis
 theme: hugo-theme-cleanwhite
 languageCode: en-us
 disqusShortname: ''
@@ -88,6 +88,3 @@ markup:
   tableOfContents:
     endLevel: 2
     startLevel: 1
-renderer:
-  unsafe: true
-diagram: true 
