@@ -1,16 +1,8 @@
-{{- $link := split .Destination "#" }}
-{{- $image := (.Page.Resources.ByType "image").GetMatch (printf "*%s*" (index $link 0)) }}
-{{- $logo := (resources.Get "images/log_umr.png") }}
-
-{{- if and $image $logo }}
-{{- $size := math.Round (mul $image.Height 0.25) }}
-{{- $size := cond (ge $size 80) ($size) (80.0) }}
-
-{{- $logo := $logo.Resize (printf "%.0fx jpg" $size) }}
-{{- $image := $image.Filter (images.Overlay $logo (sub $image.Width $logo.Width) (sub $image.Height $logo.Height) ) }}
-{{- $finalUrl := cond (isset $link 1) (printf "%s#%s" ($image.Permalink) (index $link 1)) ($image.Permalink) -}}
-
-<img src="{{ $finalUrl | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
-{{- else }}
-<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
-{{- end }}
+{{ if .Title }}
+  <figure>
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+    <center><figcaption>{{ .Title }}</figcaption></center>
+  </figure>
+{{ else }}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+{{ end }}

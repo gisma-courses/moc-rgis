@@ -13,6 +13,23 @@ image_description: "Dr. John Snow's map"
 caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
+# pdf include
+{{< cv2 "/gisma-courses/assets/pdfs/GeoAI-Unit01.pdf" >}}
+
+# generic rendering of scripts         
+{{< render-code file="/static/assets/scripts/setup.R" language="R" >}}
+
+# links
+![links](https://w.wiki/QtV "Title")  
+
+[Text](https://www.gohugo.io "Title")
+
+# gist
+{{< gist gisma bed5f4431b6d39098a35472359bb9969 >}}
+
+# local file
+{{< render-code file="/static/assets/scripts/moc-courses-setup.R" language="R" >}}
+
 ## The first law of geography in heterogeneous spaces
 We return to Tobler's First Law (TFL), which in a way made geographic history with the proximity concept, although this simplification was postulated primarily for reasons of the weak performance of 1970s-era computers. However, as can be deduced from everyday observation, the relationship of things (geo-objects) in space is usually more complex than just a function of distance. Therefore, there has been an intense and lively discussion about the usefulness of TFL in the spatial sciences, see e.g. [Goodchild 2004](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8306.2004.09402008.x).
 
@@ -52,7 +69,6 @@ Irregular polygons or points generate much more complex neighborhood structures,
 ## Video
 Placeholder, for now:
 
-{% include pdf pdf="GeoAI-01-01_Intro.pdf" %}
 
 
 ## Unit 1 slides
