@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LM | Machine Learning versus spatial statistics </title>
-      <link>https://gisma-courses.github.io/moc-rgis/post/2021-10-11-lm-machine-learning-versus-spatial-statistics/</link>
+      <link>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-11-lm-machine-learning-versus-spatial-statistics/</guid>
+      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/</guid>
       <description>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
  Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let’s take a look at interpolating or predicting values in space.
 For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.</description>
