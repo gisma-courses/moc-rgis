@@ -1,4 +1,4 @@
-baseurl: https://gisma-courses.github.io/moc-rgis
+baseurl: https://gisma-courses.github.io/moc-rgis/
 publishDir: docs
 title: Spatial Analysis with R
 theme: hugo-theme-cleanwhite
