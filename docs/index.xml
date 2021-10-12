@@ -5,7 +5,18 @@
     <link>https://gisma-courses.github.io/moc-rgis/</link>
     <description>Recent content on Spatial Analysis with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gisma-courses.github.io/moc-rgis/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Space needs a Scope</title>
+      <link>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-space-needs-a-scope/</link>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-space-needs-a-scope/</guid>
+      <description>Source: Dr. John Snow via wikimedia
+Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://gisma-courses.github.io/moc-rgis/search/placeholder/</link>

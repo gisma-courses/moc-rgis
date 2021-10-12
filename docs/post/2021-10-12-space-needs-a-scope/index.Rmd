@@ -6,24 +6,33 @@ slug: []
 categories:
   - r-gis
 tags:
-  - r-gis
   - unit01
-toc: true
-subtitle: 'thats a subtitle'
-description: 'description'
-image: '/assets/images/01-splash.jpg'
+subtitle: ''
+description: ''
+image: ''
 ---
-
-
-
+<style>.myDiv {margin-top: -30px;margin-right: -40%; text-align: right;}</style>
+<div class="myDiv">
+*Source: [Dr. John Snow](https://en.wikipedia.org/wiki/John_Snow) [via wikimedia](https://w.wiki/QtV)*
+</div>
 Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.
+
+## fsd
+
+{{< moc-rgis "/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf" >}}
+
+`r blogdown::shortcode("moc-rgis", "/moc-rgis/assets/pdfs/GeoAI-01-01_Intro.pdf", .type= "html")`
+
+# kkkk
+
+`r blogdown::shortcode("myiframe", "static/cases/suisse6.html", .type= "html")`
+
 
 # dsddsd
 
-```{r include=FALSE}
-blogdown::shortcode("highlight", "bash", .content = "echo hello world;")
 
-```
+
+`r blogdown::shortcode("gist", "gisma", "bed5f4431b6d39098a35472359bb9969", .type= "html")`
 
 # sdsdsd
 

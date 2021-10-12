@@ -15,7 +15,7 @@ outputs:
     - Algolia
 params:
   SEOTitle: Spatial Analysis with R
-  about_me: yes
+  about_me: no
   addtional_menus:
     - href: /top/books/
       title: BOOKS
@@ -64,7 +64,7 @@ params:
   omit_categories: no
   page_view_conter: no
   reward: no
-  sidebar_about_description:  Spatial Thinking 
+  sidebar_about_description:  Instructor 
   sidebar_avatar: img/reudenbach.jpg
   slogan: 
   social:
