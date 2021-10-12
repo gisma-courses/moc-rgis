@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-introduction/</loc>
+    <lastmod>2021-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-space-needs-a-scope/</loc>
+    <lastmod>2021-10-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/categories/</loc>
     <lastmod>2021-10-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,10 +17,13 @@
     <loc>https://gisma-courses.github.io/moc-rgis/categories/r-gis/</loc>
     <lastmod>2021-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-space-needs-a-scope/</loc>
+    <loc>https://gisma-courses.github.io/moc-rgis/</loc>
     <lastmod>2021-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/</loc>
+    <loc>https://gisma-courses.github.io/moc-rgis/tags/tag1/</loc>
+    <lastmod>2021-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gisma-courses.github.io/moc-rgis/tags/tag2/</loc>
     <lastmod>2021-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/tags/</loc>

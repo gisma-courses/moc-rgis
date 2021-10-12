@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on Spatial Analysis with R</title>
+    <link>https://gisma-courses.github.io/moc-rgis/tags/tag2/</link>
+    <description>Recent content in tag2 on Spatial Analysis with R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-introduction/</link>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-introduction/</guid>
+      <description>Spatial Analysis with R Motivation “Everything is related to everything else, but near things are more related than distant things” (Tobler, 1970). With this sentence, Waldo R. Tobler made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s. Fifty years later, society is facing other major challenges. Environmental and climate change is leading to species loss rates comparable only to the great mass extinctions.</description>
+    </item>
+    
+  </channel>
+</rss>

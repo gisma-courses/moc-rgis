@@ -17,8 +17,8 @@ params:
   SEOTitle: Spatial Analysis with R
   about_me: no
   addtional_menus:
-    - href: /top/books/
-      title: BOOKS
+    - href: /events/
+      title: EVENTS
     - href: /top/archive/
       title: ARCHIVE
     - href: /top/about/

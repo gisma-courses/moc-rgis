@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Spatial Analysis with R</title>
+    <link>https://gisma-courses.github.io/moc-rgis/events/</link>
+    <description>Recent content in Events on Spatial Analysis with R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Mar 2019 14:40:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rencontre scientifique, URFIST de Bordeaux</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2019-03-29-urfist-bordeaux/</link>
+      <pubDate>Fri, 29 Mar 2019 14:40:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2019-03-29-urfist-bordeaux/</guid>
+      <description>Our software engineer and associate editor Maëlle Salmon will give an invited talk about rOpenSci Software Peer Review, in French, at the &amp;ldquo;Repenser la robustesse et la fiabilité en recherche : les chercheurs face à la crise de la reproductibilité&amp;rdquo; scientific meeting organized by URFIST de Bordeaux.</description>
+    </item>
+    
+    <item>
+      <title>DataONE webinar</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2019-02-12-dataone/</link>
+      <pubDate>Tue, 12 Feb 2019 10:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2019-02-12-dataone/</guid>
+      <description>rOpenSci: high quality research software for reproducible data science Two members of our team - Karthik Ram and Scott Chamberlain - will present at the monthly DataONE webinar. They will cover our peer review process for scientific software and highlight a few of our flagship packages with use cases and examples.
+Time: 9 am Pacific; Find your timezone Registration required (free)</description>
+    </item>
+    
+    <item>
+      <title>ConectaR</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/conectar/</link>
+      <pubDate>Fri, 25 Jan 2019 10:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/conectar/</guid>
+      <description>Our software engineer Maëlle Salmon will give a keynote talk about rOpenSci at the ConectaR 2019 conference.</description>
+    </item>
+    
+    <item>
+      <title>rstudio::conf</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2019-01-15-rstudioconf/</link>
+      <pubDate>Tue, 15 Jan 2019 08:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2019-01-15-rstudioconf/</guid>
+      <description>Two members of our team will attend rstudio::conf, chat with them if you have questions about rOpenSci.
+A guide to modern reproducible data science Karthik Ram (Tidyverse-ext, session 1)
+Have you ever had a challenging time cloning someone&amp;rsquo;s data analysis repo and easily re-running the analysis without fiddling with missing packages, mismatched versions, external dependencies, unavailable data or a whole host of other issues? Would you like your own work to be reproducible where someone else can access your data, code, workflow, models and provenance and easily re-create your results without consulting you?</description>
+    </item>
+    
+    <item>
+      <title>AAAS-Community Engagement Fellows Program</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2019-01-12-stef-aaas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2019-01-12-stef-aaas/</guid>
+      <description>Our Community Manager, Stefanie Butland, will be participating as a mentor for the 2019 cohort of AAAS-Community Engagement Fellows. Are you in DC and have questions about rOpenSci? Let&amp;rsquo;s find time to chat. Contact stefanie [at] ropensci.org</description>
+    </item>
+    
+    <item>
+      <title>AGU Fall Meeting</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2018-12-11-karthik-agu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2018-12-11-karthik-agu/</guid>
+      <description>Are you attending AGU18? Have questions about rOpenSci? Our Project Lead and co-founder Karthik Ram will be there and happy to chat.</description>
+    </item>
+    
+    <item>
+      <title>Electronic Resources &amp; Libraries conference</title>
+      <link>https://gisma-courses.github.io/moc-rgis/events/2019-03-05-karthik-erl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/events/2019-03-05-karthik-erl/</guid>
+      <description>Karthik Ram will speak at the 14th annual Electronic Resources &amp;amp; Libraries conference.
+Building Towards a Future Where Reproducible and Open Data Science is the Norm The Open Science movement promotes the sharing of all artifacts of scientific research, including data, code, and methods. This movement has become popular among researchers worldwide, as evidenced by the thriving ecosystem of tools and the numerous training initiatives that have sprung up at various institutions.</description>
+    </item>
+    
+  </channel>
+</rss>
