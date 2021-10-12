@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="https://gisma-courses.github.io/moc-rgis//img/home-bg-jeep.jpg">
-    <meta property="twitter:image" content="https://gisma-courses.github.io/moc-rgis//img/home-bg-jeep.jpg" />
+    <meta property="og:image" content="https://gisma-courses.github.io/moc-rgis///moc-rgis/assets/images/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://gisma-courses.github.io/moc-rgis///moc-rgis/assets/images/home-bg-jeep.jpg" />
     
 
     
@@ -154,7 +154,7 @@
 
 
 
-<header class="intro-header" style="background-image: url('/moc-rgis/img/home-bg-jeep.jpg')">
+<header class="intro-header" style="background-image: url('/moc-rgis/moc-rgis/assets/images/home-bg-jeep.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -181,50 +181,136 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	<h1 id="blahblah">blahblah</h1>
-<p>R version 4.1.1 (2021-08-10) &ndash; &ldquo;Kick Things&rdquo;
-Copyright (C) 2021 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)</p>
-<p>R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type &lsquo;license()&rsquo; or &lsquo;licence()&rsquo; for distribution details.</p>
-<p>Natural language support but running in an English locale</p>
-<p>R is a collaborative project with many contributors.
-Type &lsquo;contributors()&rsquo; for more information and
-&lsquo;citation()&rsquo; on how to cite R or R packages in publications.</p>
-<p>Type &lsquo;demo()&rsquo; for some demos, &lsquo;help()&rsquo; for on-line help, or
-&lsquo;help.start()&rsquo; for an HTML browser interface to help.
-Type &lsquo;q()&rsquo; to quit R.</p>
-<blockquote>
-<p>blogdown:::serve_site()</p>
-</blockquote>
-<p>==&gt; Found hugo at &ldquo;/home/creu/.local/share/Hugo/0.88.1/hugo&rdquo; and &ldquo;/home/creu/bin/hugo&rdquo;. The former will be used. If you don&rsquo;t need both copies, you may delete/uninstall the latter with your system package manager such as apt or yum.</p>
-<p>Launching the server via the command:
-/home/creu/.local/share/Hugo/0.88.1/hugo server &ndash;bind 127.0.0.1 -p 4321 &ndash;themesDir themes -t hugo-theme-cleanwhite -D -F &ndash;navigateToChanged
-Serving the directory . at http://localhost:4321/moc-rgis/
-Launched the hugo server in the background (process ID: 126693). To stop it, call blogdown::stop_server() or restart the R session.</p>
-<blockquote>
-<p>blogdown::build_site()
-Start building sites …
-hugo v0.88.1-5BC54738+extended linux/amd64 BuildDate=2021-09-04T09:39:19Z VendorInfo=gohugoio
-WARN 2021/10/12 12:29:42 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
-WARN 2021/10/12 12:29:42 Page.UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID
-WARN 2021/10/12 12:29:42 Page.Dir is deprecated and will be removed in a future release. Use .File.Dir
-.File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
-.File.Dir on zero object. Wrap it in if or with: {{ with .File }}{{ .Dir }}{{ end }}</p>
-</blockquote>
-<pre><code>               | EN   
-</code></pre>
-<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;
-Pages            |  16<br>
-Paginator pages  |   0<br>
-Non-page files   |   0<br>
-Static files     | 947<br>
-Processed images |   0<br>
-Aliases          |   1<br>
-Sitemaps         |   1<br>
-Cleaned          |   0</p>
-<p>Total in 418 ms</p>
+         	<h1 id="spatial-analysis-with-r">Spatial Analysis with R</h1>
+<h2 id="motivation">Motivation</h2>
+<p>“Everything is related to everything else, but near things are more related than distant things” <a href="https://www.tandfonline.com/doi/abs/10.2307/143141">(Tobler, 1970)</a>. With this sentence, Waldo R. Tobler made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s.
+Fifty years later, society is facing other major challenges. Environmental and climate change is leading to species loss rates comparable only to the great mass extinctions. Ecosystem functionality will change, with consequences for ecosystem services such as food production, climate regulation, or recreation.
+Understanding environmental change and assessing consequences requires spatial information from landscapes. The crucial question is not whether a landscape contains forest, meadow, field, and river, but how they relate to each other spatially. Simply put, if a strip of forest separates the river from the cropland, the forest acts as an important barrier to the input of nutrients from the cropland into the river. If a clearing is present in the forest, habitat complexity increases, increasing the likelihood of biodiversity and resilience to environmental change.
+When collecting spatial information in the field, a tradeoff must be made between level of detail, scale, and temporal repetition. Selected processes can either be studied in detail at a very limited number of observation sites or estimated at a generalized scale for a landscape. The constraints loosen when linking local surveys with area-wide remote sensing observations and predicting the locally collected information in space with artificial intelligence methods.</p>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>The participants will be able to:</p>
+<ul>
+<li>
+<p>classify spatial data (e.g., from point measurements, surveys, remote sensing) based on their properties and understand the resulting properties of spatial or spatiotemporal predictions;</p>
+</li>
+<li>
+<p>select, adapt, and apply machine learning methods to solve spatiotemporal problems in human-environment research;</p>
+</li>
+<li>
+<p>design, use, and evaluate training/testing strategies for reliable error and validity estimation;</p>
+</li>
+<li>
+<p>select and create appropriate representations for visual analysis and presentation of results;</p>
+</li>
+<li>
+<p>use digital platforms for collaborative project management, software development, and active data management;</p>
+</li>
+<li>
+<p>work together in teams in an agile manner;</p>
+</li>
+<li>
+<p>document procedures and results in a comprehensible and transparent manner and critically evaluate results.</p>
+</li>
+</ul>
+<h1 id="syllabus">Syllabus</h1>
+<p>The course covers 10 sessions, with the exception of session 10 on a weekly basis.</p>
+<table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Topic</th>
+<th>Learning Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>01</strong></td>
+<td><strong>Big questions are spatial</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>01-1</td>
+<td>Habitat</td>
+<td>The importance of spatial composition and configuration of landscapes exemplified by the IPBES Nature&rsquo;s Contributions to People framework.</td>
+</tr>
+<tr>
+<td>01-2</td>
+<td>Proximity does not make relationships</td>
+<td>On the invalidity of the first law of geography in heterogeneous spaces.</td>
+</tr>
+<tr>
+<td><strong>02</strong></td>
+<td><strong>Remote Sensing 101</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>02-1</td>
+<td>Remote Sensing</td>
+<td>A brief introduction to remote sensing using optical sensors as an example.</td>
+</tr>
+<tr>
+<td>02-2</td>
+<td>Data Formats</td>
+<td>Features and differences of spatial data collected in the field or acquired by remote sensing systems.</td>
+</tr>
+<tr>
+<td><strong>03</strong></td>
+<td><strong>Randomly correct is not predicted</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>03-1</td>
+<td>From data reproduction to spatial prediction.</td>
+<td>Why latitude and longitude are (almost) never good predictive variables.</td>
+</tr>
+<tr>
+<td>03-2</td>
+<td>Randomly good.</td>
+<td>Predicting spatial features with machine learning and random validation.</td>
+</tr>
+<tr>
+<td><strong>04</strong></td>
+<td><strong>Spatial predictions and robust error estimation</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>04-1</td>
+<td>Spatially good</td>
+<td>Resilient spatial predictions using appropriate selection and validation strategies.</td>
+</tr>
+<tr>
+<td>04-2</td>
+<td>Deeply good</td>
+<td>Deep-learning and spatial patterns.</td>
+</tr>
+<tr>
+<td><strong>05</strong></td>
+<td><strong>Final team project: spatial prediction</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>05-1</td>
+<td>Research questions</td>
+<td>From curiosity to research question and project planning.</td>
+</tr>
+<tr>
+<td>05-2</td>
+<td>Research response</td>
+<td>From project planning to implementation, research documentation and presentation.</td>
+</tr>
+<tr>
+<td>05-3</td>
+<td>Research presentation</td>
+<td>Presentation of a web/screencast on the project work.</td>
+</tr>
+<tr>
+<td><strong>06</strong></td>
+<td><strong>Wrap-up</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="team">Team</h2>
 
                 
 <div id="disqus-comment"></div>

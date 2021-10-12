@@ -56,7 +56,7 @@ params:
     - href: ''
       title: ''
   friends: no
-  header_image: img/home-bg-jeep.jpg
+  header_image: assets/images/spatana.jpg
   image_404: img/404-bg.jpg
   keyword: Micro-Remotesensing
   leancloud_app_id: ''

@@ -13,8 +13,8 @@
       <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-space-needs-a-scope/</guid>
-      <description>Source: Dr. John Snow via wikimedia
-Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.</description>
+      <description>.myDiv {margin-top: -30px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
+ Approaching the topic of spatio-temporal relationships and how to represent them digitally seems problematic for both beginners and experts. In general, it involves perceiving spatial patterns and interactions in order to arrive at an understanding and description of the underlying processes. This is a scientifically based, abstract, cognitive, spatially focused experience of the world that provides the basis for understanding environmental change, assessing consequences and deriving responses or solutions.</description>
     </item>
     
   </channel>
