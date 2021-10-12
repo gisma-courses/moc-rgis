@@ -12,7 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gisma-courses.github.io/moc-rgis/top/about/</guid>
-      <description></description>
+      <description>blahblah R version 4.1.1 (2021-08-10) &amp;ndash; &amp;ldquo;Kick Things&amp;rdquo; Copyright (C) 2021 The R Foundation for Statistical Computing Platform: x86_64-pc-linux-gnu (64-bit)
+R is free software and comes with ABSOLUTELY NO WARRANTY. You are welcome to redistribute it under certain conditions. Type &amp;lsquo;license()&amp;rsquo; or &amp;lsquo;licence()&amp;rsquo; for distribution details.
+Natural language support but running in an English locale
+R is a collaborative project with many contributors. Type &amp;lsquo;contributors()&amp;rsquo; for more information and &amp;lsquo;citation()&amp;rsquo; on how to cite R or R packages in publications.</description>
     </item>
     
     <item>

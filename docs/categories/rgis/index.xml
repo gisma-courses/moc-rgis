@@ -8,6 +8,28 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gisma-courses.github.io/moc-rgis/categories/rgis/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>datadribem</title>
+      <link>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-datadribem/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-datadribem/</guid>
+      <description>Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let&amp;rsquo;s take a look at interpolating or predicting values in space.
+For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.e. sophisticated regression statistics.
+Machine learning algorithms like random forest have become very popular for spatial environmental prediction.</description>
+    </item>
+    
+    <item>
+      <title>datadriven</title>
+      <link>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-datadriven/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gisma-courses.github.io/moc-rgis/post/2021-10-12-datadriven/</guid>
+      <description>.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;} Source: Dr. John Snow via wikimedia
+ Now that we have learned the basic concepts of distance, neighborhood and filling spatial gaps, let’s take a look at interpolating or predicting values in space.
+For many decades, deterministic interpolation techniques (inverse distance weighting, nearest neighbor, kriging) have been the most popular spatial interpolation techniques. External drift kriging and regression kriging, in particular, are fundamental techniques that use spatial autocorrelation and covariate information, i.</description>
+    </item>
+    
+    <item>
       <title>Space needs a scope</title>
       <link>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
@@ -30,7 +52,7 @@
 
 &lt;/div&gt;
 
-&lt;style&gt;.myDiv {margin-top: -35px;margin-right: -40%; text-align: right;}&lt;/style&gt;
+&lt;style&gt;.myDiv {margin-top: -4%;margin-right: -40%; text-align: right;}&lt;/style&gt;
 &lt;div class=&#34;myDiv&#34;&gt;
 &lt;p&gt;&lt;em&gt;Source: &lt;a href=&#34;https://en.wikipedia.org/wiki/John_Snow&#34;&gt;Dr. John Snow&lt;/a&gt; &lt;a href=&#34;https://w.wiki/QtV&#34;&gt;via wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;

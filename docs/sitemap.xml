@@ -2,57 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gisma-courses.github.io/moc-rgis/categories/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/categories/courses/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-30-lm-machine-learning-versus-spatial-statistics/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/tags/rgis/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/categories/rgis/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-10-space-needs-a-scope/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01-00-overview/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/tags/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/tags/unit01/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/categories/unit01/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/search/placeholder/</loc>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/top/about/</loc>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/top/books/</loc>
   </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01/unit01-04_setup_working_environment/</loc>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01/unit01-03_data_driven_relationships/</loc>
-  </url><url>
-    <loc>https://gisma-courses.github.io/moc-rgis/post/2021-12-10-moc-rgis-unit01/unit01-02_proximity_does_not_make_relationships/</loc>
+    <loc>https://gisma-courses.github.io/moc-rgis/categories/</loc>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/top/archive/</loc>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/search/</loc>
+  </url><url>
+    <loc>https://gisma-courses.github.io/moc-rgis/</loc>
+  </url><url>
+    <loc>https://gisma-courses.github.io/moc-rgis/tags/</loc>
   </url><url>
     <loc>https://gisma-courses.github.io/moc-rgis/top/</loc>
   </url>
