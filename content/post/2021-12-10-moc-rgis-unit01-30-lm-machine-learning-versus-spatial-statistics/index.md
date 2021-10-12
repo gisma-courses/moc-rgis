@@ -32,7 +32,7 @@ Machine learning algorithms like random forest have become very popular for spat
 ### Voronoi polygons -- dividing space geometrically
 [Voronoi polygons](https://en.wikipedia.org/wiki/Voronoi_diagram){:target="_blank"} (aka Thiessen polygons) are an elementary method for geometrically determining *proximity* or *neighborhoods*. Voronoi polygons (see figure below) divide an area into regions that are closest to a given point that belongs to a set of irregularly distributed points. In two dimensions, a Voronoi polygon encompasses an area around a point, such that every spatial point in the polygon is closer to this point than to any other point in the set. Such constructs can also be formed in higher dimensions, giving rise to Voronoi polyhedra.
 
- ![](images/suisse1.html){width=100% height=100%}
+{{< myiframe "static/cases/suisse6.html" >}}
 
   <figcaption>The blue dots are a typical example of irregularly distributed points in space -- in this case, rain gauges in Switzerland. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)" </figcaption>
 </figure>
@@ -48,8 +48,7 @@ But what if we know more about the spatial relationships of the features? Let's 
 
 ### Continously filling the gaps by interpolation
 To get started, take a look at the following figure, which shows you (in addition to the overlaid Voronoi tessellation) six different interpolation methods to derive the spatial distribution of precipitation in Switzerland. 
-
-![](images/suisse6.html){width=900px height=1280px}
+{{< myiframe "static/cases/suisse6.html" >}}
 <figure>
   <figcaption>The blue dots are a typical example of irregularly distributed points in space -- in this case, rain gauges in Switzerland. The size of each dot corresponds to the amount of precipitation in mm. The overlaid polygons are the corresponding Voronoi segments that define the corresponding closest geometrical areas (gisma 2021)" 
 top left: Nearest neighbor interpolation based on 3-5 nearest neighbors, top right: Inverse Distance weighting (IDW) interpolation method
