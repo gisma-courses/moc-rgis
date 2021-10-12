@@ -1,5 +1,5 @@
 ---
-title: People in Space
+title: People in Space 
 author: Chris Reudenbach
 date: '2021-10-12'
 slug: []
@@ -9,7 +9,7 @@ tags:
   - unit01
   - r-gis
 toc: true
-subtitle: 'thats a subtitle'
+subtitle: 'Spatial Processes and Interactions'
 description: 'Can we depict a complex interaction between people and nature? First of all, we need a theoretical framework -- a concept that takes into account the diverse possibilities of nature and people in all of their forms and translates them comprehensibly into qualitative and quantitative data and process descriptions.'
 
 image: '/assets/images/01-splash.jpg'
