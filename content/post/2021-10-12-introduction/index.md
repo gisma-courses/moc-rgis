@@ -9,10 +9,14 @@ tags:
   - unit01
 subtitle: ''
 description: ''
-image: ''
+
+image: '/assets/images/01-splash.jpg'
 weight: 1
 ---
-# Spatial Analysis with R
+<style>.myDiv {margin-top: -36px;margin-right: -34   %; text-align: right;}</style>
+<div class="myDiv">
+*Source: [Dr. John Snow](https://en.wikipedia.org/wiki/John_Snow) [via wikimedia](https://w.wiki/QtV)*
+</div>
 
 ## Motivation
 “Everything is related to everything else, but near things are more related than distant things” [(Tobler, 1970)](https://www.tandfonline.com/doi/abs/10.2307/143141). With this sentence, Waldo R. Tobler made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s.
