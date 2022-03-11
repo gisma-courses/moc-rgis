@@ -47,12 +47,12 @@ Placeholder, for now:
 
 `r blogdown::shortcode("highlight", "bash", .content = "echo hello world;")`
 
-{% include pdf pdf="GeoAI-01-01_Intro.pdf" %}
+
 
 
 ## Unit 1 slides
 
-{% include pdf pdf="GeoAI-Unit01.pdf" %}
+
 
 
 ## Additional resources
